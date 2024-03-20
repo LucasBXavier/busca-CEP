@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-}
 
 body {
     display: flex;
@@ -142,23 +138,30 @@ footer {
 @media screen and (max-width: 768px) {
 
     body{
-        padding-left: 12%;
+        padding-left: 2%;
     }
     .container{
         width: 70vw;
-        height: 22vh;
-        margin-left: 9%;
     }
     .resultado {
-        width: 70vw;
+        width: 62vw;
         /* Altera a largura do container para 90% da viewport width em telas menores */
         max-width: none;
         /* Remove a largura máxima para ajuste em telas menores */
-        margin-left: 4%;
     }
 
     .resultado input[type="text"] {
         width: 50% !important;
         /* Altera a largura dos campos de texto para preencher 100% do container */
     }
+
+        .copyright {
+            padding: 8px 16px;
+            /* Reduzi ainda mais o padding */
+        }
+    
+        .copy {
+            font-size: 25px;
+            /* Reduzi o tamanho da fonte ainda mais para telas menores */
+        }
 }
