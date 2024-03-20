@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gwendolyn:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.296) 0px 8px 24px,
+    rgba(128, 128, 151, 0.1) 0px 16px 56px,
+    rgba(71, 71, 99, 0.1) 0px 24px 80px;
+    width: 20vw;
+    border-radius: 25px;
+    height: 15vh;
+}
+
+.resultado {
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.296) 0px 8px 24px,
+    rgba(128, 128, 151, 0.1) 0px 16px 56px,
+    rgba(71, 71, 99, 0.1) 0px 24px 80px;
+    width: 18vw;
+    border-radius: 25px;
+    margin-top: 35px;
+    font-size: 16px;
+    padding: 7px 20px;
+    display: none;
+    height: auto;
+}
+
+.resultado input[type="text"] {
+    border-radius: 25px;
+    margin-top: 10px; /* Ajuste conforme necessário */
+    margin-bottom: 10px; /* Ajuste conforme necessário */
+    font-size: 16px;
+    text-align: center;
+    padding: 7px 20px;
+    width: 50%; /* Preenche a largura do container */
+    background: none;
+    color: #c2fbd7;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+section{
+    position: relative;
+}
+
+.input-cep{
+    border-radius: 25px;
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    padding: 7px 20px;
+    background: none;
+    background-color: none;
+    color: #c2fbd7;
+}
+
+/* CSS */
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: none;
+    padding: 24px;
+    font-weight: 400;
+    font-family: "Dancing Script", cursive;
+}
+
+.copy {
+    margin-bottom: 10px;
+    color: #fff;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 40px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.copy a:hover {
+    color: #c2fbd7;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        padding-left: 12%;
+    }
+    .container{
+        width: 70vw;
+        height: 22vh;
+        margin-left: 9%;
+    }
+    .resultado {
+        width: 70vw;
+        /* Altera a largura do container para 90% da viewport width em telas menores */
+        max-width: none;
+        /* Remove a largura máxima para ajuste em telas menores */
+        margin-left: 4%;
+    }
+
+    .resultado input[type="text"] {
+        width: 50% !important;
+        /* Altera a largura dos campos de texto para preencher 100% do container */
+    }
+}
