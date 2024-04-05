@@ -34,12 +34,12 @@ body {
 
 .resultado input[type="text"] {
     border-radius: 25px;
-    margin-top: 10px; /* Ajuste conforme necessário */
-    margin-bottom: 10px; /* Ajuste conforme necessário */
+    margin-top: 10px; 
+    margin-bottom: 10px; 
     font-size: 16px;
     text-align: center;
     padding: 7px 20px;
-    width: 50%; /* Preenche a largura do container */
+    width: 50%; 
     background: none;
     color: #c2fbd7;
 }
@@ -71,7 +71,6 @@ section{
     color: #c2fbd7;
 }
 
-/* CSS */
 .button-33 {
     background-color: #c2fbd7;
     border-radius: 100px;
@@ -142,26 +141,40 @@ footer {
     }
     .container{
         width: 70vw;
+        height: 15vh;
     }
     .resultado {
         width: 62vw;
-        /* Altera a largura do container para 90% da viewport width em telas menores */
         max-width: none;
-        /* Remove a largura máxima para ajuste em telas menores */
     }
 
     .resultado input[type="text"] {
         width: 50% !important;
-        /* Altera a largura dos campos de texto para preencher 100% do container */
     }
 
-        .copyright {
-            padding: 8px 16px;
-            /* Reduzi ainda mais o padding */
-        }
+    .copyright {
+        padding: 8px 16px;
+    }
     
-        .copy {
-            font-size: 25px;
-            /* Reduzi o tamanho da fonte ainda mais para telas menores */
-        }
+    .copy {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .container {
+        width: 70vw;
+        height: 20vh;        
+    }
+}
+@media screen and (width: 1024px) {
+    .container{
+        height: 24vh;
+    }
+}
+
+@media screen and (width: 1366px){
+    .container{
+        height: 22vh;
+    }
 }
