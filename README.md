@@ -5,4 +5,4 @@
 
 ##
 
-Link direto pro site: <a href="https://lucasbxavier.github.io/busca-CEP/" target="_blank"> Busca CEP </a>
+Link direto pro site: <a href="https://lucasbxavier.github.io/busca-CEP/" target="_blank"> Pesquisa CEP </a>
