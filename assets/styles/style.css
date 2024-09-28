@@ -140,11 +140,11 @@ footer {
         padding-left: 2%;
     }
     .container{
-        width: 70vw;
-        height: 15vh;
+        width: 73vw;
+        height: 17vh;
     }
     .resultado {
-        width: 62vw;
+        width: 64vw;
         max-width: none;
     }
 
@@ -159,22 +159,28 @@ footer {
     .copy {
         font-size: 25px;
     }
+    
 }
 
 @media screen and (max-width: 375px){
     .container {
-        width: 70vw;
-        height: 20vh;        
+        width: 80vw;
+        height: 19vh;        
+    }
+    .button-33{
+        margin-bottom: 15px;
     }
 }
 @media screen and (width: 1024px) {
     .container{
         height: 24vh;
     }
+        
 }
 
 @media screen and (width: 1366px){
     .container{
         height: 22vh;
     }
+       
 }
